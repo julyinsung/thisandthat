@@ -23,7 +23,7 @@ public class FTPServiceTest {
 	
 	@Before
 	public void setup(){
-		String propFile = "C:\\Users\\july\\Documents\\dev_source\\thingplug\\thisandthat\\src\\main\\java\\ftp\\example\\config.properties";
+		String propFile = "C:\\Users\\july\\Documents\\dev_source\\java\\thisandthat\\src\\main\\java\\ftp\\example\\config.properties";
 		
 		File f = new File(propFile);
 		System.out.println(f.exists());
@@ -39,11 +39,11 @@ public class FTPServiceTest {
 		service = new FTPService();
 		
 		ftpInfo = new HashMap<String, String>();
-        ftpInfo.put("ip", props.getProperty("nable.ftp.addr"));
-        ftpInfo.put("port", props.getProperty("nable.ftp.port"));
-        ftpInfo.put("user", props.getProperty("nable.ftp.user"));
-        ftpInfo.put("password", props.getProperty("nable.ftp.pwd"));
-        ftpInfo.put("dir", props.getProperty("nable.ftp.dir"));
+        ftpInfo.put("ip", props.getProperty("na.ftp.addr"));
+        ftpInfo.put("port", props.getProperty("na.ftp.port"));
+        ftpInfo.put("user", props.getProperty("na.ftp.user"));
+        ftpInfo.put("password", props.getProperty("na.ftp.pwd"));
+        ftpInfo.put("dir", props.getProperty("na.ftp.dir"));
         
         files = new ArrayList<String>();
         files.add("C:\\Users\\july\\Documents\\project\\Thing_Plug\\work_info.txt");

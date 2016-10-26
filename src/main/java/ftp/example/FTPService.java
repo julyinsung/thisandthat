@@ -49,7 +49,7 @@ public class FTPService {
 	}
 	
 	private void executeUpload(List<String> files, Map<String, String> ftpInfo) throws FTPException, SocketException, IOException{
-		String propFile = "C:\\Users\\july\\Documents\\dev_source\\thingplug\\ftp\\src\\ftp\\example\\config.properties";
+		String propFile = "C:\\Users\\july\\Documents\\dev_source\\java\\thisandthat\\src\\main\\java\\ftp\\example\\config.properties";
 		setProperties(propFile);
 		
 		FTPClient ftp = new FTPClient();
@@ -87,7 +87,7 @@ public class FTPService {
 			}
 
 			//파일 갯수만큼 전송
-			test(files, ftp);
+			storeFiles(files, ftp);
 			
 //		} catch (SocketException e){
 //			result = FTPInfo.StatusCode.SOCKET_EXCEPTION.getValue();
@@ -108,7 +108,7 @@ public class FTPService {
 //		return result;
 	}
 
-	private void test(List<String> files, FTPClient ftp)
+	private void storeFiles(List<String> files, FTPClient ftp)
 			throws FileNotFoundException, IOException, FTPException {
 		
 		for(int i = 0; i < files.size(); i++){

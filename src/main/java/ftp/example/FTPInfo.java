@@ -17,8 +17,8 @@ public class FTPInfo{
 	}
 	
 	public enum NWFTP {
-		NABLE("nable"),
-		CONTELA("contela");
+		NA("na"),
+		CON("cont");
 		
 		private String value;
 		
