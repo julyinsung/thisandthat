@@ -52,6 +52,5 @@ public class FTPInfo{
 		
 		public boolean getValue() { return value; }
 	}
-	
 }
 
