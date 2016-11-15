@@ -15,8 +15,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * spring¿¡¼­ mybatis »ç¿ë½Ã mapperÅ×½ºÆ®¸¦ À§ÇÑ »ùÇÃ·Î ¼³Á¤À» xml·Î ÇÏÁö ¾Ê°í Å×½ºÆ® ÇÏ´Â ¹æ¹ı.<br>
- * build.gradle dependencies¿¡ compile 'org.mybatis:mybatis:3.1.1' Ãß°¡ 
+ * springì—ì„œ mybatis ì‚¬ìš©ì‹œ mapperí…ŒìŠ¤íŠ¸ë¥¼ ìœ„í•œ ìƒ˜í”Œë¡œ ì„¤ì •ì„ xmlë¡œ í•˜ì§€ ì•Šê³  í…ŒìŠ¤íŠ¸ í•˜ëŠ” ë°©ë²•.<br>
+ * build.gradle dependenciesì— compile 'org.mybatis:mybatis:3.1.1' ì¶”ê°€ 
  * 
  * @author july
  */
@@ -36,7 +36,7 @@ public class MybatisTest {
         Environment environment = new Environment("development", transactionFactory, dataSource);
         
         Configuration configuration = new Configuration(environment);
-        // mapper class Ãß°¡
+        // mapper class ï¿½ß°ï¿½
         //configuration.addMapper(xxMapper.class);
         //configuration.addMapper(xxxxMapper.class);
         
@@ -56,10 +56,10 @@ public class MybatisTest {
 		domain.setSourceFileName("test");
 		domain.setSourceId(10);
 		
-		// mapperÅ¬·¡½ºÀÇ ¸Ş¼Òµå È£Ãâ
+		// mapperí´ë˜ìŠ¤ì˜ ë©”ì†Œë“œ í˜¸ì¶œ
 		mapper.createLogNws(domain);
 		
-		// °ËÁõ
+		// ê²€ì¦
 		assertEquals(1, domain.getStatus());
 		
 		*/

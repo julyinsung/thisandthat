@@ -1,15 +1,11 @@
 package file.example;
 
-import static org.junit.Assert.fail;
-
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.Iterator;
-import java.util.stream.Stream;
 
 import org.junit.Before;
 import org.junit.Test;
