@@ -12,9 +12,9 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
 
 public class FTPServiceTest {
 
